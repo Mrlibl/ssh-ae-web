@@ -1,0 +1,86 @@
+:root {
+  --animate-delay: 0.3s;
+  --animate-duration: 500ms;
+  --btn-primary-bg: rgb(155, 155, 255);
+  --btn-primary-light-bg: lightblue;
+}
+
+.text_animation {
+  animation: focus-in-text 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+
+@keyframes focus-in-text {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.pointer {
+  --width: 1.5rem;
+  cursor: pointer;
+  width: var(--width);
+  height: var(--width);
+  background-color: rgb(var(--brand-6));
+  border-radius: 100%;
+  position: absolute;
+  opacity: .8;
+  transition: all .5s;
+  &:hover {
+    opacity: 1;
+  }
+  @keyframes wave1 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 100%;
+  }
+  &::before {
+    background: rgb(var(--brand-6));
+    opacity: 0.8;
+    animation: wave1 1s linear infinite;
+  }
+  &::after {
+    background: rgb(var(--brand-6));
+    opacity: 0.5;
+    animation: wave2 2s linear infinite;
+  }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

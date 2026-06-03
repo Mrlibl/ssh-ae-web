@@ -1,0 +1,66 @@
+@import url(./var.less);
+@import url(./font.less);
+@import url(./reset.less);
+@import url(./arco.less);
+@import url(./media.less);
+@import url(./animate.less);
+@import url(./arco.less);
+
+.arco-message-list{
+  z-index: 999999 !important;
+}
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-blur {
+  backdrop-filter: blur(5px);
+}
+
+.text-overflow-dot {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.overflow-dot {
+  .text-overflow-dot;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.wallet {
+  .text-overflow-dot;
+  text-overflow:  ellipsis;
+}
+
+
+
+.two-line-overflow-dot, .three-line-overflow-dot {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.two-line-overflow-dot {
+  -webkit-line-clamp: 2;
+}
+
+.three-line-overflow-dot {
+  -webkit-line-clamp: 3;
+}
+
+input[type='file']::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.arco-tabs-nav-type-line .arco-tabs-tab {
+  margin: 0 20px !important;
+}
+
+.arco-tabs.arco-tabs-type-line .arco-tabs-nav-ink {
+  background-color: #4C9BEA !important;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-primary-1">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo-new.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+
+  <title>
+    AlterEgo
+  </title>
+  <script>
+    // window.dataLayer = window.dataLayer || []
+    // function gtag () {
+    //   dataLayer.push(arguments)
+    // }
+    // gtag('js', new Date())
+
+    // gtag('config', 'G-VH29XYYPYE')
+  </script>
+  <script type="application/javascript">
+    //PC端 使右键和复制失效
+    document.oncontextmenu = new Function("event.returnValue=false");
+    document.onselectstart = new Function("event.returnValue=false");
+    //ios
+    document.oncontextmenu = function (e) {
+      e.preventDefault();
+    };
+    document.onselectstart = function (e) {
+      e.preventDefault();
+    };
+    //安卓
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    // document.ontouchend = function () {
+    //   throw new Error("NO ERRPR:禁止长按弹出");
+    // }
+    window.ontouchstart = function (e) {
+      e.preventDefault();
+    };
+  </script>
+</head>
+
+<body class="bg-primary-1">
+  <div id="app">
+    <div id="captcha"></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VH29XYYPYE"></script>
+  <script src="https://static.geetest.com/v4/gt4.js"></script>
+  <!-- <script src="https://esotericsoftware.com/files/runtimes/spine-ts/spine-webgl.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

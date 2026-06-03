@@ -1,0 +1,32 @@
+@media (min-width: 1181px) {
+  // pc
+  .mobile, .pad {
+    display: none !important;
+  }
+
+  .pc {
+    display: block !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1180px) {
+  .mobile, .pc {
+    display: none !important;
+  }
+  
+  .pad {
+    display: block !important;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  // mobile
+  .pc,
+  .pad {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+}

@@ -1,0 +1,233 @@
+.arco-steps {
+  .arco-steps-item-title {
+    white-space: pre-wrap;
+    max-width: 12.5rem;
+    font-family: segoe-lb;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .arco-steps-item-description {
+    margin-top: 0.75rem;
+    max-width: 16rem;
+    color: #000;
+    font-family: segoe-sb;
+    font-size: 1.125rem;
+  }
+  .arco-steps-icon {
+    background-color: #000;
+    color: #ffe24b;
+    font-family: segoe-lb;
+    font-size: 1.25rem;
+  }
+}
+
+.arco-progress-status-success {
+  .arco-progress-line-bar {
+    background-color: #000;
+  }
+}
+
+.arco-tabs.arco-tabs-type-line {
+  &.hide-content {
+    .arco-tabs-content {
+      display: none;
+    }
+  }
+
+  .arco-tabs-tab {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .arco-tabs-nav-ink {
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
+  }
+}
+
+.arco-input-wrapper {
+  background-color: #fff;
+  border: none;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.arco-drawer {
+  background-color: #ffd505;
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+  padding-bottom: 2rem;
+  height: auto !important;
+  min-height: 300px;
+  max-height: 60vh;
+  .arco-icon {
+    margin-top: 0;
+  }
+  &-body {
+    height: fit-content !important;
+  }
+  &-close-btn {
+    margin-top: 12px;
+  }
+  &-footer {
+    .arco-btn {
+      margin-left: 0;
+    }
+  }
+}
+
+.arco-modal {
+  background-color: rgb(var(--brand-6));
+  position: relative;
+  width: 660px;
+  overflow: hidden;
+  border-radius: 20px;
+  &-header {
+    padding: 2.2rem 3rem 0;
+  }
+  .arco-modal-title {
+    justify-content: flex-start;
+    font-size: 2.25rem;
+    font-family: 'segoe-lb';
+  }
+
+  &-body {
+    padding: 0 3rem 2rem;
+  }
+
+  &-footer {
+    padding: 0;
+  }
+
+  .arco-modal-close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    font-size: 1.6rem;
+    .arco-icon-hover {
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.arco-tooltip {
+  border-radius: 2rem;
+  z-index: 99 !important;
+  &-content {
+    font-family: 'segoe-sb';
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--color-black);
+  }
+}
+
+.arco-btn {
+  font-family: 'segoe-mb';
+  &.arco-btn-secondary {
+    background-image: url('../images/Rectangle.png');
+    &:hover {
+      background-color: #fed006;
+    }
+  }
+}
+
+.arco-trigger-popup {
+  // left: 250px !important;
+  .arco-trigger-popup-wrapper {
+    width: fit-content;
+  }
+  .arco-select-dropdown-list {
+    width: fit-content;
+  }
+  .arco-select-dropdown {
+    border: none;
+    padding: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    font-family: 'segoe-sb';
+    background-color: #2A2B46;
+    .arco-select-option {
+      padding: 0 1.25rem;
+      text-align: center;
+      background-color: #121212;
+      color: #fff;
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+    .arco-select-option-active {
+      // background-color: #ffe24b;
+      color: #67DDF7 !important;
+      &:hover {
+        // background-color: #ffe24b;
+        color: #67DDF7 !important;
+      }
+    }
+  }
+}
+
+.arco-select-view-single {
+  font-family: 'segoe-sb';
+  width: fit-content;
+  padding: 0;
+  .arco-select-view-suffix {
+    padding-left: 0.25rem;
+    font-weight: 800;
+    color: var(--color-black);
+  }
+}
+
+.arco-message {
+  border: none !important;
+  border-radius: 8px;
+}
+
+.arco-trigger-popup {
+  &.arco-trigger-position-tl {
+    z-index: 1031 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .arco-trigger-arrow {
+    opacity: 0;
+  }
+}
+
+.arco-modal-container {
+  z-index: 100001 !important;
+}
+
+.dark {
+  .arco-tabs-nav-ink {
+    background-color: rgb(var(--brand-6));
+  }
+}
+
+@media (max-width: 768px) {
+  .arco-steps {
+    flex-direction: column;
+    .arco-steps-item-description {
+      width: 100%;
+    }
+    .arco-steps-item {
+      margin-top: 2rem;
+    }
+  }
+}
+.set-locale {
+  .arco-select-view-icon svg {
+    background: url("../images/icon_more.svg") no-repeat center center;
+    background-size: 0.7rem 0.7rem;
+  }
+  .arco-select-view-icon svg {
+    color: transparent
+  }
+  
+}
